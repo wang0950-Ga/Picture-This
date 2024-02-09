@@ -15,18 +15,40 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img 
-    srcest="museum-320_x_180.jpg 320w,
-            museum-480_x_270.jpg 480w,
-            museum-720_x_405.jpg 720w,
-            museum-960_x_540.jpg 960w"
+    <img class="landscape"
+    srcset="images/museum-320_x_180.jpg 320w,
+            images/museum-480_x_270.jpg 480w,
+            images/museum-720_x_405.jpg 720w,
+            images/museum-960_x_540.jpg 960w"
 
     sizes="(max-width: 320px) 320px,
            (max-width: 480px) 480px,
            (max-width: 720px) 720px,
            (max-width: 960px) 960px"
 
-    src="museum-960_x_540.jpg" alt="placeholder">
+    src="images/museum-960_x_540.jpg" 
+    
+    alt="placeholder">
+
+    <img class="square"
+    srcset="images/museum-480_x_480.jpg 960w,
+            images/museum-640_x_640.jpg 1280w,
+            images/museum-800_x_800.jpg 1600w"
+
+    sizes="(max-width: 960px) 960px,
+           (max-width: 1280px) 1280px,
+           (max-width: 1600px) 1600px"
+
+    src="images/museum-640_x_640.jpg" 
+    
+    alt="placeholder">
+
+    <!-- <picture> 
+      <source srcset="images/museum-480_x_480.jpg,
+                      images/museum-960_x_960.jpg 2x,
+                      images/museum-1440_x_1440.jpg 3x"
+      media="(min-width: 960px)"/>                
+    </picture>-->
 
   </header>
 </body>

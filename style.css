@@ -29,12 +29,25 @@ h4 {
   font-weight: 300;
 }
 
-img {
+.landscape  {
   display: block;
+}
+
+.square{
+  display: none;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .landscape  {
+    display: none;
+  }
+
+  .square{
+    display: block;
+  }
+  
 }
